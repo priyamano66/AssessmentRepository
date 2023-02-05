@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ParentChildrenApp.Models.ChildModel">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAACCAAEAAAAAAACAAABAAAgAAAAAAAAg=</HashCode>
+      <FileName>Models\ChildModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParentChildrenApp.Models.ParentLoginModel">
+    <Position X="10.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAgA=</HashCode>
+      <FileName>Models\ParentLoginModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParentChildrenApp.Models.ParentRegistrationModel">
+    <Position X="12.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAICAAAACAAQAAAAIAAAAAAAACAAAAAAAAIAg=</HashCode>
+      <FileName>Models\ParentRegistrationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParentChildrenApp.Repository.ParentRepository">
+    <Position X="11.25" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAQAAAAAAAAAgAQAAAUAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Repository\ParentRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ParentChildrenApp.Repository.ChildrenRepository">
+    <Position X="8.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAgAgAAAAAAAUAAAAQAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\ChildrenRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.46" />
+  </Class>
+  <Class Name="ParentChildrenApp.Controllers.HomeController">
+    <Position X="11.25" Y="10.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgAgAACQAAAAAAAAAAIQAAAAQAAAEwAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParentChildrenApp.Controllers.ChildController">
+    <Position X="8.5" Y="10.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAwAIAAAAAAAAAEAAAAAEAA=</HashCode>
+      <FileName>Controllers\ChildController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ParentChildrenApp.Repository.IChildrenRepository">
+    <Position X="8.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAgAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\IChildrenRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ParentChildrenApp.Repository.IParentRepository">
+    <Position X="11.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAgAAAAAQAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Repository\IParentRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

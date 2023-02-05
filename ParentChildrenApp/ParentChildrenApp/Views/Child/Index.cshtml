@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_EndUserLayout.cshtml";
+}
+@model List<ChildModel>
+
+<p>
+    @Html.ActionLink("Add New Children", "AddChildren")
+</p>
+
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NoOfChild)
+        </th>
+        <th></th>
+    </tr>
+    @if(Model!=null && Model.Count>0){
+     @foreach (var item in Model)
+     {
+        @Html.HiddenFor(model => item.Id)
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                    @{
+                        string path = "~/images/"+@item.Photo;
+                    }
+                    <img src="@path" class="rounded-circle" height="40" width="70" asp-append-version="true" />
+               @* @Html.DisplayFor(modelItem => item.Photo)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoOfChild)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditChildDetails", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "DeleteChild", new { id = item.Id }, new { onclick = "return confirm('Are you sure want to delete?');" })
+            </td>
+        </tr>
+
+    }
+
+    }
+    
+</table> 
